@@ -18,6 +18,6 @@ class Anagram
         false 
       end
     end
-  
+  end
   
 end
