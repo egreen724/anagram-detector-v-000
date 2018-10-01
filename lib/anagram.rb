@@ -13,7 +13,6 @@ class Anagram
  
     word_array.keep_if do |comparison_word|
       if @word.split("").sort === comparison_word.split("").sort 
-        comparison_word
       end
     end
   end
