@@ -9,9 +9,16 @@ class Anagram
   end
   
   def match(word_array)
-    word_array.split
+    comparison_array = word_array.split
+   
     @word.split.sort 
     
+    comparison_array.each do |word|
+      if @word.split.sort == word.sort 
+        true 
+      else 
+        false 
+      end
     
   end 
   
