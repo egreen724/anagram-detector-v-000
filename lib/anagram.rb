@@ -14,8 +14,6 @@ class Anagram
     word_array.collect do |comparison_word|
       if @word.split("").sort === comparison_word.split("").sort 
         comparison_word
-      else 
-        []
       end
     end
   end
