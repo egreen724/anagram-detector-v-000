@@ -12,7 +12,7 @@ class Anagram
   def match(word_array)
  
     word_array.each do |comparison_word|
-      if @word.split("").sort == comparison_word.split("").sort 
+      anagram_word = @word.split("").sort == comparison_word.split("").sort 
         true 
       else 
         false 
