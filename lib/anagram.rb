@@ -10,6 +10,9 @@ class Anagram
   
   def compare(word_array)
     word_array.split(", ")
+    @word.split 
+    
+    
   end 
   
 end
