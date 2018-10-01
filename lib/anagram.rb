@@ -15,7 +15,7 @@ class Anagram
       if @word.split("").sort == comparison_word.split("").sort 
         comparison_word
       else 
-        false 
+        nil 
       end
     end
   end
