@@ -12,8 +12,8 @@ class Anagram
   def match(word_array)
  
     word_array.each do |comparison_word|
-      anagram_word = @word.split("").sort == comparison_word.split("").sort 
-        true 
+      if @word.split("").sort == comparison_word.split("").sort 
+        comparison_word
       else 
         false 
       end
