@@ -11,7 +11,7 @@ class Anagram
   
   def match(word_array)
  
-    word_array.collect.compact do |comparison_word|
+    word_array.keep_in? do |comparison_word|
       if @word.split("").sort === comparison_word.split("").sort 
         comparison_word
       end
